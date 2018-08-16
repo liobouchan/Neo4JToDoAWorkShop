@@ -1,0 +1,5 @@
+Have to do this in PostgreSQL
+
+    psql -d northwind < export_csv.sql
+
+THE PostgreSQL.SQL have been defined in individual file 'export_csv.sql'

@@ -20,3 +20,35 @@ Cypher is a declarative, SQL-inspired language for describing patterns in graphs
 
 It allows us to state what we want to select, insert, update or delete from our graph data without requiring us to describe exactly how to do it.
 
+Write this query on Neo4J Browser
+
+```
+//Find 10 people...
+    MATCH (people:Person) RETURN people.name LIMIT 10
+```
+See the Magic
+```
+╒════════════════════╕
+│"people.name"       │
+╞════════════════════╡
+│"Emil"              │
+├────────────────────┤
+│"Johan"             │
+├────────────────────┤
+│"Ian"               │
+├────────────────────┤
+│"Rik"               │
+├────────────────────┤
+│"Allison"           │
+├────────────────────┤
+│"Keanu Reeves"      │
+├────────────────────┤
+│"Carrie-Anne Moss"  │
+├────────────────────┤
+│"Laurence Fishburne"│
+├────────────────────┤
+│"Hugo Weaving"      │
+├────────────────────┤
+│"Lilly Wachowski"   │
+└────────────────────┘
+```

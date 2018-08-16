@@ -62,7 +62,7 @@ I have wrote some files with cypher extension with differents reasons.
 
 ## Authors
 
-* **Leonardo Bouchan** - *Recopilate Information from Neo4J Docs and separate in special teach cases to lear how does Neo4J and Cypher work for Developers* 
+* **Leonardo Bouchan** - *Recopilate Information from Neo4J Docs and separate in special teach cases to learn how does Neo4J and Cypher work for Developers* 
 
 ## Acknowledgments
 * Thanks to Rhisco to assing me this Project

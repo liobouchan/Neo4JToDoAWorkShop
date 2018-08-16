@@ -52,3 +52,18 @@ See the Magic
 │"Lilly Wachowski"   │
 └────────────────────┘
 ```
+I have wrote some files with cypher extension with differents reasons.
+
+Create - Have the query to create a Neo4J Database related to movies.
+Finds - Querys to learn how to find on Cypher Language
+Query - Querys on Cypher Language
+Solve - To Solve some basic problems like basic path find
+Recommend - More elaborated queries , to automated recommends in base of searching.
+
+## Authors
+
+* **Leonardo Bouchan** - *Recopilate Information from Neo4J Docs and separate in special teach cases to lear how does Neo4J and Cypher work for Developers* 
+
+## Acknowledgments
+* Thanks to Rhisco to assing me this Project
+* Thanks Neo4J for your beautiful Documentation

@@ -54,11 +54,11 @@ See the Magic
 ```
 I have wrote some files with cypher extension with differents reasons.
 
-Create - Have the query to create a Neo4J Database related to movies.
-Finds - Querys to learn how to find on Cypher Language
-Query - Querys on Cypher Language
-Solve - To Solve some basic problems like basic path find
-Recommend - More elaborated queries , to automated recommends in base of searching.
+*Create - Have the query to create a Neo4J Database related to movies.
+*Finds - Querys to learn how to find on Cypher Language
+*Query - Querys on Cypher Language
+*Solve - To Solve some basic problems like basic path find
+*Recommend - More elaborated queries , to automated recommends in base of searching.
 
 ## Authors
 

@@ -6,7 +6,6 @@ This project have only teach material to deploy some cypher query languaje of
 Neo4J to learn this graph database.
 
 ### Prerequisites
+You have to install :
+
 [Neo4J](https://neo4j.com/download/) - Neo4j Desktop: Developer-Friendly Packaging
-```
-Install
-```

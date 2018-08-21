@@ -70,8 +70,8 @@ See the Magic
 └────────────────────┘
 ```
 
-![One of the Neo4j Database Used on This Repo](https://github.com/liobouchan/Neo4JToDoAWorkShop/blob/master/BuildMovieGraphDataBase/generalViewsOfTheGDB/graph.png)
 Movies Graph DataBase
+![One of the Neo4j Database Used on This Repo](https://github.com/liobouchan/Neo4JToDoAWorkShop/blob/master/BuildMovieGraphDataBase/generalViewsOfTheGDB/graph.png)
 
 I have wrote some files with cypher extension with differents reasons.
 

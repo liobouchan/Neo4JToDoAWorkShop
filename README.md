@@ -71,6 +71,7 @@ See the Magic
 ```
 
 ![One of the Neo4j Database Used on This Repo](https://github.com/liobouchan/Neo4JToDoAWorkShop/blob/master/BuildMovieGraphDataBase/generalViewsOfTheGDB/graph.png)
+Movies Graph DataBase
 
 I have wrote some files with cypher extension with differents reasons.
 

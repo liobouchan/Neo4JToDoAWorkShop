@@ -18,19 +18,19 @@ You have to install :
 [Neo4J](https://neo4j.com/download/) - Neo4j Desktop: Developer-Friendly Packaging
 
 ## Content
-    * Slides
-        * 1. Neo4J Intro
-    * Build Movie Graph Data Base
-        * Views of the final Graph Data Base
+* Slides
+    * 1. Neo4J Intro
+* Build Movie Graph Data Base
+    * Views of the final Graph Data Base
         * Queries
-            * Create
-            * Find
-            * Query
-            * Solve
-            * Recommend
-            * Clean Up
-    * Import From RDBMS to Graph
-    *Build A Semantic Data with Neo4j
+        * Create
+        * Find
+        * Query
+        * Solve
+        * Recommend
+        * Clean Up
+* Import From RDBMS to Graph
+* Build A Semantic Data with Neo4j
 
 ## Running Cyphers
 Cypher is a declarative, SQL-inspired language for describing patterns in graphs visually using an ascii-art syntax.

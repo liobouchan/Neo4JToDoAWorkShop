@@ -22,7 +22,7 @@ You have to install :
     * Neo4J Intro
 * Build Movie Graph Data Base
     * Views of the final Graph Data Base
-        * Queries
+    * Queries
         * Create
         * Find
         * Query

@@ -69,6 +69,11 @@ See the Magic
 │"Lilly Wachowski"   │
 └────────────────────┘
 ```
+
+```
+![](\BuildMovieGraphDataBase\generalViewsOfTheGDB\graph.png)
+```
+
 I have wrote some files with cypher extension with differents reasons.
 
 * Create - Have the query to create a Neo4J Database related to movies.

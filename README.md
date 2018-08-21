@@ -1,6 +1,8 @@
 # Neo4J WorkShop by Lio Bouchan
 Material extracted to give a WorkShop of Neo4j , the Objective is to create a Graph Database on Neo4j, using Neo4j tools. (Browser , Desktop).
 
+![](header.png)
+
 ## Getting Started
 This project have only teach material to deploy some cypher query languaje of
 Neo4J to learn this graph database.
@@ -14,6 +16,21 @@ You should have familiarized yourself with Graph Databases and the Property Grap
 You have to install :
 
 [Neo4J](https://neo4j.com/download/) - Neo4j Desktop: Developer-Friendly Packaging
+
+## Content
+    * Slides
+        * 1. Neo4J Intro
+    * Build Movie Graph Data Base
+        * Views of the final Graph Data Base
+        * Queries
+            * Create
+            * Find
+            * Query
+            * Solve
+            * Recommend
+            * Clean Up
+    * Import From RDBMS to Graph
+    *Build A Semantic Data with Neo4j
 
 ## Running Cyphers
 Cypher is a declarative, SQL-inspired language for describing patterns in graphs visually using an ascii-art syntax.
@@ -59,6 +76,7 @@ I have wrote some files with cypher extension with differents reasons.
 * Query - Querys on Cypher Language
 * Solve - To Solve some basic problems like basic path find
 * Recommend - More elaborated queries , to automated recommends in base of searching.
+* CleanUp - Simple queries to delete all the DataBase and view all Nodes.
 
 ## Authors
 

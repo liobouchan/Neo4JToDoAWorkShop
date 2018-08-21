@@ -19,7 +19,7 @@ You have to install :
 
 ## Content
 * Slides
-    * 1. Neo4J Intro
+    * Neo4J Intro
 * Build Movie Graph Data Base
     * Views of the final Graph Data Base
         * Queries

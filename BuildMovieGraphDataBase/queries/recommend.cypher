@@ -24,3 +24,9 @@
     MATCH (tom:Person {name:"Tom Hanks"})-[:ACTED_IN]->(m)<-[:ACTED_IN]-(coActors),
         (coActors)-[:ACTED_IN]->(m2)<-[:ACTED_IN]-(cruise:Person {name:"Tom Cruise"})
     RETURN tom, m, coActors, m2, cruise
+
+//Shortest Path to Connect the 2 TOMS
+    MATCH p=shortestPath(
+        (tom:Person {name:"Tom Hanks"})-[*]-(cruise:Person {name:"Tom Cruise"})
+    )
+    RETURN p

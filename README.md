@@ -71,7 +71,7 @@ See the Magic
 ```
 
 ```
-![](\BuildMovieGraphDataBase\generalViewsOfTheGDB\graph.png)
+![](./BuildMovieGraphDataBase/generalViewsOfTheGDB/graph.png)
 ```
 
 I have wrote some files with cypher extension with differents reasons.

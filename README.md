@@ -70,7 +70,7 @@ See the Magic
 └────────────────────┘
 ```
 
-[alt text](https://github.com/liobouchan/Neo4JToDoAWorkShop/blob/master/BuildMovieGraphDataBase/generalViewsOfTheGDB/graph.png)
+[](https://github.com/liobouchan/Neo4JToDoAWorkShop/blob/master/BuildMovieGraphDataBase/generalViewsOfTheGDB/graph.png)
 
 I have wrote some files with cypher extension with differents reasons.
 

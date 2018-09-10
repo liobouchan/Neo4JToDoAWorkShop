@@ -70,13 +70,35 @@ public class App implements AutoCloseable{
 		}
 	}
 	
+	public void callMaxJAR() {
+		try
+		{
+			Session session = driver.session();
+			String greeting = session.writeTransaction( new TransactionWork<String>()
+	        {
+				public String execute( Transaction tx )
+	            {
+					StatementResult result = tx.run( "CALL com.maxdemarzi.traverse.decision_tree('bar entrance', {gender:'male', age:'20'}) yield path "
+							+ "RETURN last(nodes(path)).id;",
+							Values.parameters( "message", "prueba" ));
+	                return result.single().get( 0 ).asString();
+	            }
+	        } );
+	        System.out.println( greeting );
+		}catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Error en movie " + e);
+		}
+	}
+	
 	public static void main( String... args ) throws Exception
 	    {
 	        try
 	        {
 	        	App greeter = new App( "bolt://localhost:7687", "neo4j", "123" );
-	            greeter.printGreeting( "hello, world" );
-	            greeter.insertMovie();
+	            //greeter.printGreeting( "hello, world" );
+	        	greeter.callMaxJAR();
+	        	
 	        }catch (Exception e) {
 				// TODO: handle exception
 				System.out.println("Error en el main " + e);

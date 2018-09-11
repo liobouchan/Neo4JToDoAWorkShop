@@ -78,7 +78,7 @@ public class App implements AutoCloseable{
 	        {
 				public String execute( Transaction tx )
 	            {
-					StatementResult result = tx.run( "CALL com.maxdemarzi.traverse.decision_tree('bar entrance', {gender:'male', age:'20'}) yield path "
+					StatementResult result = tx.run( "CALL com.maxdemarzi.traverse.decision_tree('bar entrance', {gender:'female', age:'19'}) yield path "
 							+ "RETURN last(nodes(path)).id;",
 							Values.parameters( "message", "prueba" ));
 	                return result.single().get( 0 ).asString();

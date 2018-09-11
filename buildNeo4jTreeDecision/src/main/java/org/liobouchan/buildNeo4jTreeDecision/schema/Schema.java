@@ -1,7 +1,14 @@
 package org.liobouchan.buildNeo4jTreeDecision.schema;
 
+import java.io.IOException;
+import java.util.stream.Stream;
+
+import org.liobouchan.buildNeo4jTreeDecision.results.StringResult;
 import org.neo4j.graphdb.GraphDatabaseService;
+import org.neo4j.logging.Log;
 import org.neo4j.procedure.Context;
+import org.neo4j.procedure.Description;
+import org.neo4j.procedure.Mode;
 import org.neo4j.procedure.Procedure;
 
 public class Schema {

@@ -30,9 +30,7 @@ public class DecisionTreeTraverser {
 
     private static final DecisionTreeEvaluator decisionTreeEvaluator = new DecisionTreeEvaluator();
 
-    @Procedure(name = "com.maxdemarzi.traverse.decision_tree", mode = Mode.READ)
-    @Description("CALL com.maxdemarzi.traverse.decision_tree(tree, facts) - traverse decision tree")
-    public Stream<PathResult> traverseDecisionTree(@Name("tree") String id, @Name("facts") Map<String, String> facts) throws IOException {
+    public Stream<PathResult> traverseDecisionTree(String id, Map<String, String> facts) throws IOException {
         // Which Decision Tree are we interested in?
         Node tree = db.findNode(Labels.Tree, "id", id);
         if ( tree != null) {

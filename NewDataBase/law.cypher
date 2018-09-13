@@ -1,3 +1,8 @@
+CREATE (anexo1B:Anexo {nombre:'Anexo 1-B',
+                                descripcion:'MAPEO DE CALIFICACIONES Y GRADOS DE RIESGO
+                                    Tabla de Correspondencia de Calificaciones y Grados de Riesgo a Largo Plazo'
+                                })
+                                
 CREATE (anexo15:Anexo {nombre:'Anexo 15',
                                 descripcion:'REQUISITOS MÍNIMOS PARA LA AUTORIZACIÓN DE METODOLOGÍAS INTERNAS'
                                 })
@@ -278,6 +283,70 @@ CREATE (articulo2Bis12:Articulo {nombre:'Artículo 2 Bis 12',
                                 descripcion:'El grupo I-A estará integrado por'
                                 })
 
+CREATE (articulo2Bis18:Articulo {nombre:'Artículo 2 Bis 18',
+                                descripcion:'En el grupo VII-A se clasificarán:'
+                                })
+
+    CREATE (A2B18apartadoI:Apartado {nombre:'I',
+                                     descripcion:'Las Operaciones sujetas a riesgo de crédito con o a cargo de personas morales o físicas con
+                                        actividad empresarial que, individualmente o en su conjunto, respecto del mismo emisor o
+                                        contraparte, sean iguales o mayores al equivalente en moneda nacional a 4 millones de UDIs,
+                                        y cuando sus Ingresos Netos o Ventas Netas anuales sean iguales o mayores al equivalente
+                                        en moneda nacional a 14 millones de UDIs, considerando para el cálculo de la equivalencia en
+                                        moneda nacional de las UDIs, el valor en pesos que el Banco de México haya publicado en el
+                                        Diario Oficial de la Federación para dicha unidad en la fecha del mencionado estado financiero.
+                                        (162) Sin perjuicio de lo anterior, los créditos que tengan como finalidad el desarrollo o
+                                        adquisición de inmuebles comerciales y cuenten con la garantía hipotecaria de dichos
+                                        inmuebles formarán parte del grupo IX señalado en el Artículo 2 Bis 21 de las presentes
+                                        disposiciones.
+                                        '
+    })
+
+    CREATE (A2B18apartadoII:Apartado {nombre:'II',
+                                     descripcion:'Depósitos y Operaciones Sujetas a Riesgo de Crédito con o a cargo de instituciones bancarias,
+                                        casas de bolsa o sus equivalentes en el extranjero.'
+    })
+
+    CREATE (A2B18apartadoIII:Apartado {nombre:'III',
+                                     descripcion:'Depósitos y Operaciones Sujetas a Riesgo de Crédito con o a cargo de instituciones de
+                                        seguros del exterior.
+                                        '
+    })
+
+    CREATE (A2B18apartadoIV:Apartado {nombre:'IV',
+                                     descripcion:'Depósitos y Operaciones Sujetas a Riesgo de Crédito con o a cargo de entidades
+                                        constituidas en el exterior a las que hacen referencia los incisos a) y b) de la fracción I del
+                                        artículo 2 Bis 12.a de las presentes disposiciones que sean liquidadas en cámaras de
+                                        compensación que no observen lo señalado en el segundo párrafo del citado artículo.
+                                        (130) No se reconocerán las garantías reales o personales de las Operaciones comprendidas en este
+                                        grupo que ya hayan sido consideradas en la calificación otorgada por una Institución Calificadora.
+                                        (161) Las Operaciones comprendidas en este grupo deberán ser ponderadas conforme al Grado de
+                                        Riesgo a que corresponda la Calificación crediticia asignada por alguna de las Instituciones
+                                        Calificadoras al emisor o contraparte de que se trate, según lo dispuesto en el Anexo 1-B de las
+                                        presentes disposiciones.
+                                        (162) Sin perjuicio del párrafo anterior, para efectos de ponderar las Operaciones señaladas en la
+                                        fracción II del presente artículo se deberá utilizar la Calificación crediticia en escala global asignada
+                                        por alguna de las Instituciones Calificadoras al gobierno central del país extranjero al cual
+                                        pertenece la institución bancaria, casa de bolsa y sus equivalentes en el extranjero, con la cual se
+                                        mantienen dichas operaciones.
+                                        Insurgentes Sur No. 1971, Plaza Inn, Col. Guadalupe Inn C.P. 01020, Delegación Álvaro Obregón,
+                                        Ciudad de México Tel.: 5255 1454-6000 www.gob.mx/cnbv
+                                        (162) En caso de no existir Calificación para el emisor, contraparte o gobierno central del país
+                                        extranjero de que se trate, la ponderación por riesgo de crédito será la indicada en el referido
+                                        Anexo 1-B para Operaciones del Grupo VII no calificadas.
+                                        (162) En ningún caso, el ponderador por riesgo que se asigne a las Operaciones no calificadas
+                                        comprendidas en este grupo podrá ser inferior a la del gobierno central del país al que pertenezcan.
+                                        '
+    })
+        CREATE
+            (articulo2Bis18)-[:TIENE_APARTADO]->(A2B18apartadoI),
+            (articulo2Bis18)-[:TIENE_APARTADO]->(A2B18apartadoII),
+            (articulo2Bis18)-[:TIENE_APARTADO]->(A2B18apartadoIII),
+            (articulo2Bis18)-[:TIENE_APARTADO]->(A2B18apartadoIV),
+            (A2B18apartadoI)-[:REFIERE_A]->(articulo2Bis21),
+            (A2B18apartadoIV)-[:REFIERE_A]->(articulo2Bis12),
+            (articulo2Bis18)-[:REFIERE_A ]->(anexo1B)
+
 CREATE (articulo2Bis71:Articulo {nombre:'Artículo 2 Bis 71',
                                 descripcion:'Las instituciones para determinar el requerimiento de capital por riesgo de 
                                 crédito con las personas a las que se refiere este subapartado, deberan sujetarse a lo siguiente.'
@@ -381,15 +450,8 @@ CREATE (articulo2Bis4:Articulo {nombre:'Artículo 2 Bis 4',
 
 
 
-CREATE (articulo2Bis18:Articulo {nombre:'Artículo 2 Bis 18',
-                                descripcion:'En el grupo VII-A se clasificarán:'
-                                })
 
 
                                 
 
 
-CREATE (anexo1B:Anexo {nombre:'Anexo 1-B',
-                                descripcion:'MAPEO DE CALIFICACIONES Y GRADOS DE RIESGO
-                                    Tabla de Correspondencia de Calificaciones y Grados de Riesgo a Largo Plazo'
-                                })

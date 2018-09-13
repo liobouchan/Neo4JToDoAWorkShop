@@ -239,6 +239,44 @@ CREATE (articulo2Bis68:Articulo {nombre:'Artículo 2 Bis 68',
                                     considerar que el incumplimiento de un deudor se actualiza cuando se cumple al menos una de las
                                     condiciones siguientes:'
                                 })
+    CREATE (A2B68apartadoI:Apartado {nombre:'I',
+                                    descripcion:'Cuando el deudor se encuentra en situación de mora durante 90 días naturales o más
+                                        respecto a cualquier obligación crediticia importante frente a la Institución. Para tales efectos
+                                        se entenderá como obligación crediticia importante aquélla que defina la propia Institución.
+                                        Excepcionalmente, la Comisión podrá autorizar el uso de un plazo diferente al de 90 días
+                                        naturales o más para las Operaciones Sujetas a Riesgo de Crédito con las personas a que se
+                                        refiere la fracción IV del Artículo 2 Bis 69 de las presentes disposiciones cuando, a su juicio,
+                                        dicha definición de incumplimiento se ajuste mejor a la Metodología Interna de que se trate.
+                                        '
+    })
+    CREATE (A2B68apartadoII:Apartado {nombre:'II',
+                                    descripcion:' Cuando sea probable que el deudor no cumpla la totalidad de sus obligaciones crediticias
+                                        frente a la Institución, actualizándose tal supuesto cuando:
+                                        (130) a) La Institución determine que alguno de los créditos a cargo del deudor constituye una
+                                        -
+                                        Criterios Contables, o bien
+                                        (130) b) La Institución haya demandado el concurso mercantil del deudor o bien este último lo
+                                        haya solicitado.
+                                        (132) c) Derogado.
+                                        (132) d) Derogado.
+                                        (219) Las Instituciones deberán utilizar las definiciones e indicadores mencionados anteriormente
+                                        para determinar el número de incumplimientos, así como para estimar los parámetros de riesgo,
+                                        de conformidad con el subnumeral (ii) de la Sección IV del Anexo 15 de las presentes disposiciones
+                                        '
+    })
+        CREATE
+            (articulo2Bis68)-[:TIENE_APARTADO]->(A2B68apartadoI),
+            (articulo2Bis68)-[:TIENE_APARTADO]->(A2B68apartadoII),
+            (A2B68apartadoI)-[:REFIERE_A {fraccion:['4']} ]->(anexo15)
+            (A2B68apartadoII)-[:REFIERE_A {seccion:['4']} ]->(anexo15)
+
+CREATE (articulo2Bis21:Articulo {nombre:'Artículo 2 Bis 21',
+                                descripcion:'- Los grupos IX y X se integrarán por lo siguiente:'
+                                })
+
+CREATE (articulo2Bis12:Articulo {nombre:'Artículo 2 Bis 12',
+                                descripcion:'El grupo I-A estará integrado por'
+                                })
 
 CREATE (articulo2Bis71:Articulo {nombre:'Artículo 2 Bis 71',
                                 descripcion:'Las instituciones para determinar el requerimiento de capital por riesgo de 
@@ -340,18 +378,14 @@ CREATE (articulo2Bis4:Articulo {nombre:'Artículo 2 Bis 4',
                                     lo siguiente:'
                                 })
 
-CREATE (articulo2Bis12:Articulo {nombre:'Artículo 2 Bis 12',
-                                descripcion:'El grupo I-A estará integrado por'
-                                })
+
 
 
 CREATE (articulo2Bis18:Articulo {nombre:'Artículo 2 Bis 18',
                                 descripcion:'En el grupo VII-A se clasificarán:'
                                 })
 
-CREATE (articulo2Bis21:Articulo {nombre:'Artículo 2 Bis 21',
-                                descripcion:'- Los grupos IX y X se integrarán por lo siguiente:'
-                                })
+
                                 
 
 

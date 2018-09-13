@@ -1,5 +1,4 @@
 //Articulos
-    // First I have to define the Nodes 
     CREATE (articulo2Bis72:Articulo {nombre:'Artículo 2 Bis 72',
                                     descripcion:'Las Instituciones para calcular la Probabilidad de Incumplimiento, deberán
                                         sujetarse a los criterios siguientes:'
@@ -111,4 +110,13 @@
 
     CREATE (articulo2Bis21:Articulo {nombre:'Artículo 2 Bis 21',
                                     descripcion:'- Los grupos IX y X se integrarán por lo siguiente:'
+                                    })
+//Anexos
+    CREATE (anexo15:Anexo {nombre:'Anexo 15',
+                                    descripcion:'REQUISITOS MÍNIMOS PARA LA AUTORIZACIÓN DE METODOLOGÍAS INTERNAS'
+                                    })
+
+    CREATE (anexo1B:Anexo {nombre:'Anexo 1-B',
+                                    descripcion:'MAPEO DE CALIFICACIONES Y GRADOS DE RIESGO
+                                        Tabla de Correspondencia de Calificaciones y Grados de Riesgo a Largo Plazo'
                                     })

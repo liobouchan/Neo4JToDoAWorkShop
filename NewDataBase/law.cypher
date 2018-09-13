@@ -2,7 +2,11 @@ CREATE (anexo1B:Anexo {nombre:'Anexo 1-B',
                                 descripcion:'MAPEO DE CALIFICACIONES Y GRADOS DE RIESGO
                                     Tabla de Correspondencia de Calificaciones y Grados de Riesgo a Largo Plazo'
                                 })
-                                
+
+CREATE (capituloIV:Capitulo {nombre:'Capitulo IV',
+                                descripcion:'Segunda Sección'
+                                })
+
 CREATE (anexo15:Anexo {nombre:'Anexo 15',
                                 descripcion:'REQUISITOS MÍNIMOS PARA LA AUTORIZACIÓN DE METODOLOGÍAS INTERNAS'
                                 })
@@ -347,6 +351,88 @@ CREATE (articulo2Bis18:Articulo {nombre:'Artículo 2 Bis 18',
             (A2B18apartadoIV)-[:REFIERE_A]->(articulo2Bis12),
             (articulo2Bis18)-[:REFIERE_A ]->(anexo1B)
 
+CREATE (articulo2Bis4:Articulo {nombre:'Artículo 2 Bis 4',
+                                descripcion:'El cómputo para determinar el cumplimiento de los requerimientos de
+                                    capitalización se realizará considerando las Operaciones de las Instituciones en territorio nacional,
+                                    así como las Operaciones de sus agencias y sucursales en el extranjero, conforme a la integración
+                                    de los grupos de riesgos de mercado, de crédito y operacional que se establecen en el presente
+                                    título.
+                                    (50) Los requerimientos de capital por riesgos de mercado, los requerimientos de capital por riesgo
+                                    de crédito, los requerimientos de capital por Riesgo Operacional, así como el Capital Neto, se
+                                    determinarán con base en saldos al último día del mes.
+                                    (50) Las Instituciones efectuarán dicho cómputo una vez al mes y la información relativa a éste
+                                    deberán proporcionarla al Banco de México. Sin perjuicio de lo anterior, el Banco de México
+                                    verificará dicho cómputo, asimismo podrá resolver que alguna Institución efectúe el cómputo para
+                                    determinar el cumplimiento de los requerimientos de capitalización así como el Indice de
+                                    Capitalización, con mayor periodicidad y en cualquier fecha, cuando a su juicio o al de la Comisión
+                                    se estime que entre los días que van de un cómputo a otro, la Institución está asumiendo riesgos
+                                    notoriamente mayores a los que muestren las cifras de cierre de mes.
+                                    (50) Para los efectos del párrafo anterior, las Instituciones deberán proporcionar al Banco de México
+                                    la información que sobre el particular les requiera, en la forma, que incluye formularios y ayudas
+                                    operativas, y plazos establecidos por el propio Banco Central, con la previa opinión favorable de la
+                                    Comisión. Dicha información, en su caso, tendrá que reportarse debidamente valuada conforme a
+                                    lo establecido en el Artículo 2 Bis 2 de las presentes disposiciones.
+                                    (50) El cómputo a que se refiere este artículo se efectuará en moneda nacional, de conformidad con
+                                    lo siguiente:'
+                                })
+
+CREATE (articulo2Bis14:Articulo {nombre:'Artículo 2 Bis 14',
+                                descripcion:'El grupo III estará integrado por:'
+                                })
+    CREATE (A2B14apartadoI:Apartado {nombre:'I',
+                                     descripcion:'Depósitos y Operaciones Sujetas a Riesgo de Crédito con o a cargo de entidades financieras
+                                        filiales de instituciones de banca múltiple o entidades financieras del grupo financiero al que
+                                        pertenezca la institución de banca múltiple, incluidas las entidades financieras filiales de éstas.
+                                        '
+    })
+
+    CREATE (A2B14apartadoII:Apartado {nombre:'II',
+                                     descripcion:'Depósitos y Operaciones Sujetas a Riesgo de Crédito con o a cargo de instituciones de banca
+                                        múltiple y de casas de bolsa, constituidas en México.
+                                        '
+    })
+
+    CREATE (A2B14apartadoIII:Apartado {nombre:'III',
+                                     descripcion:' Depósitos y Operaciones Sujetas a Riesgo de Crédito con o a cargo de instituciones de
+                                        seguros autorizadas en México.
+                                        '
+    })
+
+    CREATE (A2B14apartadoIV:Apartado {nombre:'IV',
+                                     descripcion:' Las demás Operaciones autorizadas que se asimilen a este grupo conforme a lo establecido
+                                        en el Artículo 2 Bis 4
+                                        '
+    })
+
+    CREATE (A2B14apartadoV:Apartado {nombre:'V',
+                                     descripcion:'Depósitos y Operaciones Sujetas a Riesgo de Crédito con o a cargo de entidades
+                                        constituidas en México a las que hacen referencia los incisos a) y b) de la fracción I del artículo
+                                        2 Bis 12.a de las presentes disposiciones que sean liquidadas en cámaras de compensación
+                                        que no observen lo señalado en el segundo párrafo del citado artículo.
+                                        (50) Las Operaciones con o a cargo de las personas comprendidas en este grupo deberán ser
+                                        ponderadas conforme al Grado de Riesgo a que corresponda la Calificación crediticia asignada por
+                                        alguna de las Instituciones Calificadoras al emisor o contraparte de que se trate, según lo dispuesto
+                                        en el Anexo 1-B. En caso de no existir Calificación para el emisor o la contraparte de que se trate,
+                                        la ponderación por riesgo de crédito será la indicada en el referido Anexo 1-B para Operaciones
+                                        del grupo III no calificadas.
+                                        (161) Asimismo, las Operaciones con o a cargo de instituciones de banca múltiple que no cuenten
+                                        con al menos dos calificaciones o que estas instituciones no las revelen conforme a lo establecido
+                                        en la Sección Segunda del Capítulo VII del presente título, estarán sujetas a una ponderación por
+                                        riesgo de crédito de 100 por ciento.
+                                        '
+    })
+
+        CREATE
+            (articulo2Bis14)-[:TIENE_APARTADO]->(A2B14apartadoI),
+            (articulo2Bis14)-[:TIENE_APARTADO]->(A2B14apartadoII),
+            (articulo2Bis14)-[:TIENE_APARTADO]->(A2B14apartadoIII),
+            (articulo2Bis14)-[:TIENE_APARTADO]->(A2B14apartadoIV),
+            (articulo2Bis14)-[:TIENE_APARTADO]->(A2B14apartadoV),
+            (A2B14apartadoIV)-[:REFIERE_A]->(articulo2Bis4),
+            (A2B14apartadoV)-[:REFIERE_A {fraccion:['I'], inciso:['a', 'b']} ]->(articulo2Bis12),
+            (articulo2Bis14)-[:REFIERE_A ]->(anexo1B),
+            (articulo2Bis14)-[:REFIERE_A {seccion:['2']}]->(anexo1B)
+
 CREATE (articulo2Bis71:Articulo {nombre:'Artículo 2 Bis 71',
                                 descripcion:'Las instituciones para determinar el requerimiento de capital por riesgo de 
                                 crédito con las personas a las que se refiere este subapartado, deberan sujetarse a lo siguiente.'
@@ -399,7 +485,7 @@ CREATE (articulo2Bis71:Articulo {nombre:'Artículo 2 Bis 71',
             (A2B71apartadoI)-[:REFIERE_A]->(articulo2Bis80),
             (A2B71apartadoII)-[:REFIERE_A]->(articulo2Bis68),
             (A2B71apartadoIII)-[:REFIERE_A]->(articulo2Bis14),
-            (A2B71apartadoIII)-[:REFIERE_A {fracciones:['I' , 'II']} ]->(articulo2Bis18)
+            (A2B71apartadoIII)-[:REFIERE_A {fraccion:['I' , 'II']} ]->(articulo2Bis18)
 
 
 
@@ -418,34 +504,9 @@ CREATE (articulo2Bis71:Articulo {nombre:'Artículo 2 Bis 71',
 
 
 
-CREATE (articulo2Bis14:Articulo {nombre:'Artículo 2 Bis 14',
-                                descripcion:'El grupo III estará integrado por:'
-                                })
 
-CREATE (articulo2Bis4:Articulo {nombre:'Artículo 2 Bis 4',
-                                descripcion:'El cómputo para determinar el cumplimiento de los requerimientos de
-                                    capitalización se realizará considerando las Operaciones de las Instituciones en territorio nacional,
-                                    así como las Operaciones de sus agencias y sucursales en el extranjero, conforme a la integración
-                                    de los grupos de riesgos de mercado, de crédito y operacional que se establecen en el presente
-                                    título.
-                                    (50) Los requerimientos de capital por riesgos de mercado, los requerimientos de capital por riesgo
-                                    de crédito, los requerimientos de capital por Riesgo Operacional, así como el Capital Neto, se
-                                    determinarán con base en saldos al último día del mes.
-                                    (50) Las Instituciones efectuarán dicho cómputo una vez al mes y la información relativa a éste
-                                    deberán proporcionarla al Banco de México. Sin perjuicio de lo anterior, el Banco de México
-                                    verificará dicho cómputo, asimismo podrá resolver que alguna Institución efectúe el cómputo para
-                                    determinar el cumplimiento de los requerimientos de capitalización así como el Indice de
-                                    Capitalización, con mayor periodicidad y en cualquier fecha, cuando a su juicio o al de la Comisión
-                                    se estime que entre los días que van de un cómputo a otro, la Institución está asumiendo riesgos
-                                    notoriamente mayores a los que muestren las cifras de cierre de mes.
-                                    (50) Para los efectos del párrafo anterior, las Instituciones deberán proporcionar al Banco de México
-                                    la información que sobre el particular les requiera, en la forma, que incluye formularios y ayudas
-                                    operativas, y plazos establecidos por el propio Banco Central, con la previa opinión favorable de la
-                                    Comisión. Dicha información, en su caso, tendrá que reportarse debidamente valuada conforme a
-                                    lo establecido en el Artículo 2 Bis 2 de las presentes disposiciones.
-                                    (50) El cómputo a que se refiere este artículo se efectuará en moneda nacional, de conformidad con
-                                    lo siguiente:'
-                                })
+
+
 
 
 

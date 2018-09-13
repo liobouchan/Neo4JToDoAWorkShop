@@ -276,7 +276,7 @@ CREATE (articulo2Bis68:Articulo {nombre:'Artículo 2 Bis 68',
         CREATE
             (articulo2Bis68)-[:TIENE_APARTADO]->(A2B68apartadoI),
             (articulo2Bis68)-[:TIENE_APARTADO]->(A2B68apartadoII),
-            (A2B68apartadoI)-[:REFIERE_A {fraccion:['4']} ]->(anexo15)
+            (A2B68apartadoI)-[:REFIERE_A {fraccion:['4']} ]->(articulo2Bis69),
             (A2B68apartadoII)-[:REFIERE_A {seccion:['4']} ]->(anexo15)
 
 CREATE (articulo2Bis21:Articulo {nombre:'Artículo 2 Bis 21',
@@ -431,7 +431,7 @@ CREATE (articulo2Bis14:Articulo {nombre:'Artículo 2 Bis 14',
             (A2B14apartadoIV)-[:REFIERE_A]->(articulo2Bis4),
             (A2B14apartadoV)-[:REFIERE_A {fraccion:['I'], inciso:['a', 'b']} ]->(articulo2Bis12),
             (articulo2Bis14)-[:REFIERE_A ]->(anexo1B),
-            (articulo2Bis14)-[:REFIERE_A {seccion:['2']}]->(anexo1B)
+            (articulo2Bis14)-[:REFIERE_A {seccion:['2']}]->(capituloIV)
 
 CREATE (articulo2Bis71:Articulo {nombre:'Artículo 2 Bis 71',
                                 descripcion:'Las instituciones para determinar el requerimiento de capital por riesgo de 
@@ -485,34 +485,6 @@ CREATE (articulo2Bis71:Articulo {nombre:'Artículo 2 Bis 71',
             (A2B71apartadoI)-[:REFIERE_A]->(articulo2Bis80),
             (A2B71apartadoII)-[:REFIERE_A]->(articulo2Bis68),
             (A2B71apartadoIII)-[:REFIERE_A]->(articulo2Bis14),
+            (A2B71apartadoIII)-[:REFIERE_A]->(anexo1B),
             (A2B71apartadoIII)-[:REFIERE_A {fraccion:['I' , 'II']} ]->(articulo2Bis18)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                
-
-
+            

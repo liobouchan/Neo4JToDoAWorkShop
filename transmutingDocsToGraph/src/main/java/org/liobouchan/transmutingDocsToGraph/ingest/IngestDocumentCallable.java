@@ -49,7 +49,7 @@ public class IngestDocumentCallable implements Callable {
         List<Node> nodes = new ArrayList<>();
         List<Relationship> relationships = new ArrayList<>();
 
-        BodyContentHandler handler = new BodyContentHandler();
+        BodyContentHandler handler = new BodyContentHandler(-1);
         AutoDetectParser parser = new AutoDetectParser();
         Metadata metadata = new Metadata();
         String text = "";

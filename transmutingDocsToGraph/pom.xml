@@ -11,10 +11,32 @@
   <url>http://maven.apache.org</url>
 
   <properties>
+  	<neo4j.version>3.4.0</neo4j.version>
+  	<tika.version>1.18</tika.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <dependencies>
+  	<dependency>
+		<groupId>org.neo4j</groupId>
+        <artifactId>neo4j</artifactId>
+        <version>${neo4j.version}</version>
+        <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+    	<groupId>org.apache.tika</groupId>
+    	<artifactId>tika-core</artifactId>
+    	<version>${tika.version}</version>
+    </dependency>
+    
+    <dependency>
+    	<groupId>org.apache.tika</groupId>
+    	<artifactId>tika-parsers</artifactId>
+    	<version>${tika.version}</version>
+    </dependency>
+
+  	<!-- Tests -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

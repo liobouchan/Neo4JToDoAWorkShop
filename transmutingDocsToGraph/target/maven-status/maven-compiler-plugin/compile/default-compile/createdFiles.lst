@@ -1,0 +1,12 @@
+org\liobouchan\transmutingDocsToGraph\schema\RelationshipTypes.class
+org\liobouchan\transmutingDocsToGraph\results\StringResult.class
+org\liobouchan\transmutingDocsToGraph\ingest\Languages$2.class
+org\liobouchan\transmutingDocsToGraph\ingest\Languages.class
+org\liobouchan\transmutingDocsToGraph\schema\Schema$1.class
+org\liobouchan\transmutingDocsToGraph\ingest\IngestDocumentCallable.class
+org\liobouchan\transmutingDocsToGraph\schema\Labels.class
+org\liobouchan\transmutingDocsToGraph\results\GraphResult.class
+org\liobouchan\transmutingDocsToGraph\Procedures.class
+org\liobouchan\transmutingDocsToGraph\results\MapResult.class
+org\liobouchan\transmutingDocsToGraph\schema\Schema.class
+org\liobouchan\transmutingDocsToGraph\ingest\Languages$1.class

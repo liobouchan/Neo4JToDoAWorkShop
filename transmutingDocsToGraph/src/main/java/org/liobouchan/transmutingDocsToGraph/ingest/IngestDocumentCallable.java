@@ -13,10 +13,12 @@ import java.util.concurrent.Callable;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.AutoDetectParser;
 import org.apache.tika.sax.BodyContentHandler;
+
 import org.liobouchan.transmutingDocsToGraph.results.GraphResult;
 import org.liobouchan.transmutingDocsToGraph.schema.Labels;
 import org.liobouchan.transmutingDocsToGraph.schema.RelationshipTypes;
 import org.liobouchan.transmutingDocsToGraph.schema.Schema;
+
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Label;
 import org.neo4j.graphdb.Node;

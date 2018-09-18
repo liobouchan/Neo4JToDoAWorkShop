@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
 
+import org.liobouchan.transmutingDocsToGraph.results.StringResult;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.procedure.Context;
 import org.neo4j.procedure.Description;

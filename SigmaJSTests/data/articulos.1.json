@@ -1,0 +1,620 @@
+{
+    "nodes": [{
+        "label": " Artículo 323",
+        "type": ["Articulo"],
+        "id": 87
+    }, {
+        "label": "\nArtículo 31",
+        "type": ["Articulo"],
+        "id": 92
+    }, {
+        "label": " Artículo 2 Bis 73",
+        "type": ["Articulo"],
+        "id": 111
+    }, {
+        "label": "Artículo 2",
+        "type": ["Articulo"],
+        "id": 114
+    }, {
+        "label": "Artículo 2 Bis 1",
+        "type": ["Articulo"],
+        "id": 115
+    }, {
+        "label": "Artículo 2 Bis 2",
+        "type": ["Articulo"],
+        "id": 116
+    }, {
+        "label": "Artículo 2 Bis 3",
+        "type": ["Articulo"],
+        "id": 117
+    }, {
+        "label": "Artículo 2 Bis 4",
+        "type": ["Articulo"],
+        "id": 118
+    }, {
+        "label": "Artículo 2 Bis 5",
+        "type": ["Articulo"],
+        "id": 119
+    }, {
+        "label": "Artículo 2 Bis 6",
+        "type": ["Articulo"],
+        "id": 120
+    }, {
+        "label": "Artículo 2 Bis 7",
+        "type": ["Articulo"],
+        "id": 121
+    }, {
+        "label": "Artículo 2 Bis 8",
+        "type": ["Articulo"],
+        "id": 122
+    }, {
+        "label": "Artículo 2 Bis 9",
+        "type": ["Articulo"],
+        "id": 123
+    }, {
+        "label": "Artículo 2 Bis 10",
+        "type": ["Articulo"],
+        "id": 124
+    }, {
+        "label": "Artículo 2 Bis 11",
+        "type": ["Articulo"],
+        "id": 125
+    }, {
+        "label": "Artículo 2 Bis 12",
+        "type": ["Articulo"],
+        "id": 126
+    }, {
+        "label": "Artículo 2 Bis 13",
+        "type": ["Articulo"],
+        "id": 127
+    }, {
+        "label": "Artículo 4",
+        "type": ["Articulo"],
+        "id": 128
+    }, {
+        "label": "Artículo 5",
+        "type": ["Articulo"],
+        "id": 129
+    }, {
+        "label": "Artículo 6",
+        "type": ["Articulo"],
+        "id": 130
+    }, {
+        "label": "Artículo 7",
+        "type": ["Articulo"],
+        "id": 131
+    }, {
+        "label": "Artículo 8",
+        "type": ["Articulo"],
+        "id": 132
+    }, {
+        "label": "Artículo 9",
+        "type": ["Articulo"],
+        "id": 133
+    }, {
+        "label": "Artículo 10",
+        "type": ["Articulo"],
+        "id": 134
+    }, {
+        "label": "Artículo 11",
+        "type": ["Articulo"],
+        "id": 135
+    }, {
+        "label": "Artículo 12",
+        "type": ["Articulo"],
+        "id": 136
+    }, {
+        "label": "Artículo 13",
+        "type": ["Articulo"],
+        "id": 137
+    }, {
+        "label": "Artículo 14",
+        "type": ["Articulo"],
+        "id": 138
+    }, {
+        "label": "Artículo 15",
+        "type": ["Articulo"],
+        "id": 139
+    }, {
+        "label": "Artículo 16",
+        "type": ["Articulo"],
+        "id": 140
+    }, {
+        "label": "Artículo 17",
+        "type": ["Articulo"],
+        "id": 141
+    }, {
+        "label": "Artículo 18",
+        "type": ["Articulo"],
+        "id": 142
+    }, {
+        "label": "Artículo 19",
+        "type": ["Articulo"],
+        "id": 143
+    }, {
+        "label": "Artículo 20",
+        "type": ["Articulo"],
+        "id": 144
+    }, {
+        "label": "Artículo 21",
+        "type": ["Articulo"],
+        "id": 145
+    }, {
+        "label": "Artículo 22",
+        "type": ["Articulo"],
+        "id": 146
+    }, {
+        "label": "Artículo 23",
+        "type": ["Articulo"],
+        "id": 147
+    }, {
+        "label": "Artículo 24",
+        "type": ["Articulo"],
+        "id": 148
+    }, {
+        "label": "Artículo 3",
+        "type": ["Articulo"],
+        "id": 189
+    }, {
+        "label": "Artículo 2 Bis 120",
+        "type": ["Articulo"],
+        "id": 190
+    }, {
+        "label": "Artículo 172 Bis 41",
+        "type": ["Articulo"],
+        "id": 205
+    }, {
+        "label": "I",
+        "type": ["Apartado"],
+        "id": 88
+    }, {
+        "label": "II",
+        "type": ["Apartado"],
+        "id": 89
+    }, {
+        "label": "a",
+        "type": ["Apartado"],
+        "id": 90
+    }, {
+        "label": "b",
+        "type": ["Apartado"],
+        "id": 91
+    }, {
+        "label": "I",
+        "type": ["Apartado"],
+        "id": 93
+    }, {
+        "label": "II",
+        "type": ["Apartado"],
+        "id": 94
+    }, {
+        "label": "III",
+        "type": ["Apartado"],
+        "id": 95
+    }, {
+        "label": "VI",
+        "type": ["Apartado"],
+        "id": 96
+    }, {
+        "label": "a",
+        "type": ["Apartado"],
+        "id": 97
+    }, {
+        "label": "b",
+        "type": ["Apartado"],
+        "id": 98
+    }, {
+        "label": "VII",
+        "type": ["Apartado"],
+        "id": 99
+    }, {
+        "label": "VIII",
+        "type": ["Apartado"],
+        "id": 100
+    }, {
+        "label": "I",
+        "type": ["Apartado"],
+        "id": 112
+    }, {
+        "label": "a",
+        "type": ["Apartado"],
+        "id": 113
+    }, {
+        "label": "Titulo Primero",
+        "type": ["Apartado"],
+        "id": 169
+    }, {
+        "label": "Titulo Primero Bis",
+        "type": ["Apartado"],
+        "id": 203
+    }, {
+        "label": "Titulo Segundo",
+        "type": ["Apartado"],
+        "id": 204
+    }, {
+        "label": "Anexo A",
+        "type": ["Anexo"],
+        "id": 149
+    }, {
+        "label": "Anexo 1-A",
+        "type": ["Anexo"],
+        "id": 150
+    }, {
+        "label": "Anexo B",
+        "type": ["Anexo"],
+        "id": 151
+    }, {
+        "label": "Anexo 2-B",
+        "type": ["Anexo"],
+        "id": 152
+    }, {
+        "label": "Anexo C",
+        "type": ["Anexo"],
+        "id": 153
+    }, {
+        "label": "Anexo D",
+        "type": ["Anexo"],
+        "id": 154
+    }, {
+        "label": "Anexo E",
+        "type": ["Anexo"],
+        "id": 155
+    }, {
+        "label": "Anexo F",
+        "type": ["Anexo"],
+        "id": 156
+    }, {
+        "label": "Anexo G",
+        "type": ["Anexo"],
+        "id": 157
+    }, {
+        "label": "Anexo H",
+        "type": ["Anexo"],
+        "id": 158
+    }, {
+        "label": "Anexo I-2",
+        "type": ["Anexo"],
+        "id": 159
+    }, {
+        "label": "Anexo J",
+        "type": ["Anexo"],
+        "id": 160
+    }, {
+        "label": "Anexo K-2",
+        "type": ["Anexo"],
+        "id": 161
+    }, {
+        "label": "Anexo L",
+        "type": ["Anexo"],
+        "id": 162
+    }, {
+        "label": "Anexo IV",
+        "type": ["Anexo"],
+        "id": 163
+    }, {
+        "label": "Anexo V",
+        "type": ["Anexo"],
+        "id": 164
+    }, {
+        "label": "Anexo VII",
+        "type": ["Anexo"],
+        "id": 165
+    }, {
+        "label": "Anexo X",
+        "type": ["Anexo"],
+        "id": 166
+    }],
+    "edges": [
+        {
+            "source": 87,
+            "target": 89,
+            "caption": "TieneApartado",
+            "id": 1
+        }, {
+            "source": 87,
+            "target": 112,
+            "caption": "TieneApartado",
+            "id": 2
+
+        }, {
+            "source": 87,
+            "target": 88,
+            "caption": "TieneApartado",
+            "id": 3
+
+        }, {
+            "source": 90,
+            "target": 96,
+            "caption": "TieneApartado",
+            "id": 4
+
+        }, {
+            "source": 90,
+            "target": 89,
+            "caption": "TieneApartado",
+            "id": 5
+
+        }, {
+            "source": 91,
+            "target": 96,
+            "caption": "TieneApartado",
+            "id": 6
+
+        }, {
+            "source": 91,
+            "target": 89,
+            "caption": "TieneApartado",
+            "id": 7
+        }, {
+            "source": 92,
+            "target": 100,
+            "caption": "TieneApartado",
+            "id": 8
+        }, {
+            "source": 92,
+            "target": 99,
+            "caption": "TieneApartado",
+            "id": 9
+        }, {
+            "source": 92,
+            "target": 96,
+            "caption": "TieneApartado",
+            "id": 10
+        }, {
+            "source": 92,
+            "target": 95,
+            "caption": "TieneApartado",
+            "id": 11
+        }, {
+            "source": 92,
+            "target": 94,
+            "caption": "TieneApartado",
+            "id": 12
+        }, {
+            "source": 92,
+            "target": 89,
+            "caption": "TieneApartado",
+            "id": 13
+        }, {
+            "source": 92,
+            "target": 88,
+            "caption": "TieneApartado",
+            "id": 14
+        }, {
+            "source": 92,
+            "target": 93,
+            "caption": "TieneApartado",
+            "id": 15
+        }, {
+            "source": 92,
+            "target": 112,
+            "caption": "TieneApartado",
+            "id": 16
+        }, {
+            "source": 97,
+            "target": 96,
+            "caption": "TieneApartado",
+            "id": 17
+        }, {
+            "source": 98,
+            "target": 96,
+            "caption": "TieneApartado",
+            "id": 18
+        }, {
+            "source": 111,
+            "target": 112,
+            "caption": "TieneApartado",
+            "id": 19
+        }, {
+            "source": 113,
+            "target": 96,
+            "caption": "TieneApartado",
+            "id": 20
+        }, {
+            "source": 113,
+            "target": 89,
+            "caption": "TieneApartado",
+            "id": 21
+        }, {
+            "source": 113,
+            "target": 112,
+            "caption": "TieneApartado",
+            "id": 22
+        }, {
+            "source": 169,
+            "target": 114,
+            "caption": "TieneArticulo",
+            "id": 23
+        }, {
+            "source": 203,
+            "target": 190,
+            "caption": "TieneArticulo",
+            "id": 24
+        }, {
+            "source": 203,
+            "target": 123,
+            "caption": "TieneArticulo",
+            "id": 25
+        }, {
+            "source": 203,
+            "target": 122,
+            "caption": "TieneArticulo",
+            "id": 26
+        }, {
+            "source": 203,
+            "target": 125,
+            "caption": "TieneArticulo",
+            "id": 27
+        }, {
+            "source": 203,
+            "target": 124,
+            "caption": "TieneArticulo",
+            "id": 28
+        }, {
+            "source": 203,
+            "target": 127,
+            "caption": "TieneArticulo",
+            "id": 29
+        }, {
+            "source": 203,
+            "target": 126,
+            "caption": "TieneArticulo",
+            "id": 30
+        }, {
+            "source": 203,
+            "target": 115,
+            "caption": "TieneArticulo",
+            "id": 31
+        }, {
+            "source": 203,
+            "target": 111,
+            "caption": "TieneArticulo",
+            "id": 32
+        }, {
+            "source": 203,
+            "target": 117,
+            "caption": "TieneArticulo",
+            "id": 33
+        }, {
+            "source": 203,
+            "target": 116,
+            "caption": "TieneArticulo",
+            "id": 34
+        }, {
+            "source": 203,
+            "target": 119,
+            "caption": "TieneArticulo",
+            "id": 35
+        }, {
+            "source": 203,
+            "target": 118,
+            "caption": "TieneArticulo",
+            "id": 36
+        }, {
+            "source": 203,
+            "target": 121,
+            "caption": "TieneArticulo",
+            "id": 37
+        }, {
+            "source": 203,
+            "target": 120,
+            "caption": "TieneArticulo",
+            "id": 38
+        }, {
+            "source": 204,
+            "target": 205,
+            "caption": "TieneArticulo",
+            "id": 39
+        }, {
+            "source": 204,
+            "target": 148,
+            "caption": "TieneArticulo",
+            "id": 40
+        }, {
+            "source": 204,
+            "target": 147,
+            "caption": "TieneArticulo",
+            "id": 41
+        }, {
+            "source": 204,
+            "target": 146,
+            "caption": "TieneArticulo",
+            "id": 42
+        }, {
+            "source": 204,
+            "target": 145,
+            "caption": "TieneArticulo",
+            "id": 43
+        }, {
+            "source": 204,
+            "target": 144,
+            "caption": "TieneArticulo",
+            "id": 44
+        }, {
+            "source": 204,
+            "target": 143,
+            "caption": "TieneArticulo",
+            "id": 45
+        }, {
+            "source": 204,
+            "target": 142,
+            "caption": "TieneArticulo",
+            "id": 46
+        }, {
+            "source": 204,
+            "target": 141,
+            "caption": "TieneArticulo",
+            "id": 47
+        }, {
+            "source": 204,
+            "target": 140,
+            "caption": "TieneArticulo",
+            "id": 48
+        }, {
+            "source": 204,
+            "target": 139,
+            "caption": "TieneArticulo",
+            "id": 49
+        }, {
+            "source": 204,
+            "target": 138,
+            "caption": "TieneArticulo",
+            "id": 50
+        }, {
+            "source": 204,
+            "target": 137,
+            "caption": "TieneArticulo",
+            "id": 51
+        }, {
+            "source": 204,
+            "target": 136,
+            "caption": "TieneArticulo",
+            "id": 52
+        }, {
+            "source": 204,
+            "target": 135,
+            "caption": "TieneArticulo",
+            "id": 53
+        }, {
+            "source": 204,
+            "target": 134,
+            "caption": "TieneArticulo",
+            "id": 54
+        }, {
+            "source": 204,
+            "target": 133,
+            "caption": "TieneArticulo",
+            "id": 55
+        }, {
+            "source": 204,
+            "target": 132,
+            "caption": "TieneArticulo",
+            "id": 56
+        }, {
+            "source": 204,
+            "target": 131,
+            "caption": "TieneArticulo",
+            "id": 57
+        }, {
+            "source": 204,
+            "target": 130,
+            "caption": "TieneArticulo",
+            "id": 58
+        }, {
+            "source": 204,
+            "target": 129,
+            "caption": "TieneArticulo",
+            "id": 59
+        }, {
+            "source": 204,
+            "target": 128,
+            "caption": "TieneArticulo",
+            "id": 60
+        }, {
+            "source": 204,
+            "target": 189,
+            "caption": "TieneArticulo",
+            "id": 61
+        }
+    ]
+}

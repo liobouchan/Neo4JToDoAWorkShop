@@ -13,7 +13,7 @@
         "label": "And a last one"
       },
       {
-        "id": "30",
+        "id": 3,
         "label": "A",
         "descripcion": "Estos es la descripcion amigo"
       }
@@ -37,7 +37,7 @@
       {
         "id": 1,
         "source": "n2",
-        "target": "30"
+        "target": 3
       }
     ]
   }

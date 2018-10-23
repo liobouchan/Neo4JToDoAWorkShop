@@ -47,6 +47,10 @@
 <script src="sigma.js-1.2.1/src/misc/sigma.misc.drawHovers.js"></script>
 <!-- END SIGMA IMPORTS -->
 <script src="sigma.js-1.2.1/plugins/sigma.parsers.json/sigma.parsers.json.js"></script>
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<link rel="shortcut icon" href="favicon.ico">
+
 <div id="container">
   <style>
     #graph-container {
@@ -59,24 +63,8 @@
   </style>
   <div id="graph-container"></div>
 </div>
+
 <script>
-/**
- * Here is just a basic example on how to properly display a graph
- * exported from Gephi as a JSON file, with the JSON Exporter plugin from
- * the Oxford Internet Institute:
- *
- *  > https://marketplace.gephi.org/plugin/json-exporter/
- *
- * The plugin sigma.parsers.json can load and parse the JSON graph file,
- * and instantiate sigma when the graph is received.
- *
- * The object given as the second parameter is the base of the instance
- * configuration object. The plugin will just add the "graph" key to it
- * before the instanciation.
- */
-// sigma.parsers.json('data/articulos.json', {
-//   container: 'graph-container'
-// });
 var i, 
     g = {
       nodes: [],
@@ -102,6 +90,7 @@ sigma.parsers.json(
         nodes[i].y = Math.random();
         nodes[i].size = 3;
       }
+      console.log(s.graph.edges())
         s.refresh();
   }
 );

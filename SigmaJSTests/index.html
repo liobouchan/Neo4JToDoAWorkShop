@@ -63,58 +63,52 @@
 </div>
 
 <script>
-var i,
+  var i,
+      s,
+      g = {
+        nodes: [],
+        edges: []
+      };
+  s = new sigma({
+    graph: g,
+    renderer: {
+      container: document.getElementById('graph-container'),
+      type: 'canvas'
+    },
+    settings: {
+      doubleClickEnabled: false,
+      enableEdgeHovering: true,
+      edgeHoverSizeRatio: 2,
+      edgeHoverExtremities: true,
+    }
+  });
+  sigma.parsers.json(
+    'data/articulos.json',
     s,
-    g = {
-      nodes: [],
-      edges: []
-    };
+    function() {
+        console.log(s)
+        nodes = s.graph.nodes();
+        len = nodes.length;
+        edges = s.graph.edges();
+        lenEdges = edges.length;
 
-s = new sigma({
-  graph: g,
-  renderer: {
-    container: document.getElementById('graph-container'),
-    type: 'canvas'
-  },
-  settings: {
-    doubleClickEnabled: false,
-    enableEdgeHovering: true,
-    edgeHoverSizeRatio: 2,
-    edgeHoverExtremities: true,
-  }
-});
+        for (i = 0; i < len; i++) {
+          console.log(nodes[i]);
+          nodes[i].x = Math.random();
+          nodes[i].y = Math.random();
+          nodes[i].size = 3;
+        }
 
-sigma.parsers.json(
-  'data/articulos.json',
-  s,
-  function() {
-      console.log(s)
-      nodes = s.graph.nodes();
-      len = nodes.length;
-      edges = s.graph.edges();
-      lenEdges = edges.length;
+        for (let j = 0; j < lenEdges; j++) {
+          console.log(edges[j]);
+          edges[j].size = 0.1;
+        }
 
-      for (i = 0; i < len; i++) {
-        console.log(nodes[i]);
-        nodes[i].x = Math.random();
-        nodes[i].y = Math.random();
-        nodes[i].size = 3;
-      }
-
-      for (let j = 0; j < lenEdges; j++) {
-        console.log(edges[j]);
-        edges[j].size = 0.1;
-      }
-
-      console.log(s.graph.edges())
-      s.refresh();
-  }
-);
-
-
-
-s.bind('clickNode', function(e) {
-  console.log( e.data.node.label , e.data.node);
-});
-
+        console.log(s.graph.edges())
+        s.refresh();
+    }
+  );
+  s.bind('clickNode', function(e) {
+    console.log( e.data.node.label , e.data.node);
+  });
 </script>

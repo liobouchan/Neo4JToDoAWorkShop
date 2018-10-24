@@ -47,8 +47,6 @@
 <script src="sigma.js-1.2.1/src/misc/sigma.misc.drawHovers.js"></script>
 <!-- END SIGMA IMPORTS -->
 <script src="sigma.js-1.2.1/plugins/sigma.parsers.json/sigma.parsers.json.js"></script>
-<meta http-equiv="cache-control" content="no-cache" />
-<meta http-equiv="Pragma" content="no-cache" />
 <link rel="shortcut icon" href="favicon.ico">
 
 <div id="container">
@@ -65,7 +63,8 @@
 </div>
 
 <script>
-var i, 
+var i,
+    s,
     g = {
       nodes: [],
       edges: []
@@ -73,7 +72,16 @@ var i,
 
 s = new sigma({
   graph: g,
-  container: 'graph-container'
+  renderer: {
+    container: document.getElementById('graph-container'),
+    type: 'canvas'
+  },
+  settings: {
+    doubleClickEnabled: false,
+    enableEdgeHovering: true,
+    edgeHoverSizeRatio: 2,
+    edgeHoverExtremities: true,
+  }
 });
 
 sigma.parsers.json(
@@ -81,8 +89,10 @@ sigma.parsers.json(
   s,
   function() {
       console.log(s)
-      nodes = s.graph.nodes(),
+      nodes = s.graph.nodes();
       len = nodes.length;
+      edges = s.graph.edges();
+      lenEdges = edges.length;
 
       for (i = 0; i < len; i++) {
         console.log(nodes[i]);
@@ -90,9 +100,21 @@ sigma.parsers.json(
         nodes[i].y = Math.random();
         nodes[i].size = 3;
       }
+
+      for (let j = 0; j < lenEdges; j++) {
+        console.log(edges[j]);
+        edges[j].size = 0.1;
+      }
+
       console.log(s.graph.edges())
-        s.refresh();
+      s.refresh();
   }
 );
+
+
+
+s.bind('clickNode', function(e) {
+  console.log( e.data.node.label , e.data.node);
+});
 
 </script>

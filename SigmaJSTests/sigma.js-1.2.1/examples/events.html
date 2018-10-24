@@ -102,12 +102,8 @@ s = new sigma({
   },
   settings: {
     doubleClickEnabled: false,
-    minEdgeSize: 0.5,
-    maxEdgeSize: 4,
     enableEdgeHovering: true,
-    edgeHoverColor: 'edge',
-    defaultEdgeHoverColor: '#000',
-    edgeHoverSizeRatio: 1,
+    edgeHoverSizeRatio: 2,
     edgeHoverExtremities: true,
   }
 });
@@ -116,7 +112,7 @@ s = new sigma({
 // s.bind('overNode outNode clickNode doubleClickNode rightClickNode', function(e) {
 //   console.log(e.type, e.data.node.label, e.data.captor);
 // });
-s.bind('overNode outNode clickNode doubleClickNode rightClickNode', function(e) {
+s.bind('clickNode', function(e) {
   console.log( e.data.node.label , e.data.node);
 });
 // s.bind('overEdge outEdge clickEdge doubleClickEdge rightClickEdge', function(e) {

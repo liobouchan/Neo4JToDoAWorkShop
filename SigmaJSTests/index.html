@@ -61,6 +61,10 @@
   </style>
   <div id="graph-container"></div>
 </div>
+<div id="contenedor">
+  <label>Hola</label>
+  <p id="texto"></p>
+</div>
 
 <script>
   var i,
@@ -110,5 +114,6 @@
   );
   s.bind('clickNode', function(e) {
     console.log( e.data.node.label , e.data.node);
+    document.getElementById("texto").innerHTML = e.data.node.label;
   });
 </script>

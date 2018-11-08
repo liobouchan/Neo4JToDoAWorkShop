@@ -72,7 +72,7 @@
 
             // iteration on graph for all node
             data.graph.nodes.forEach(function (node) {
-
+                console.log(node);
                 var sigmaNode =  {
                     id : node.id,
                     label : node.id,
@@ -115,6 +115,7 @@
         // construct sigma nodes
         for (key in nodesMap) {
             graph.nodes.push(nodesMap[key]);
+            console.log(nodesMap[key]);
         }
         // construct sigma nodes
         for (key in edgesMap) {

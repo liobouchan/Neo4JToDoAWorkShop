@@ -27,6 +27,15 @@ class HelloWorldExample(object):
             for name in listOfNames:
                 print(name[0])
 
+    def print_articlesNamesAndDescriptions(self):
+        with self._driver.session() as session:
+            result = session.write_transaction(self.get_AllArticlesNamesAndDescriptions)
+            listOfResults = result.values()
+            print(listOfResults)
+            for oneResult in listOfResults:
+                #print(oneResult)
+                print("\nNombre: " , oneResult[0])
+                print("Descripcion: " , oneResult[1])
     @staticmethod
     def _create_and_return_greeting(tx, message):
         result = tx.run("CREATE (a:Greeting) "
@@ -44,5 +53,10 @@ class HelloWorldExample(object):
         result = tx.run("MATCH (N:Articulo) RETURN N.nombre")
         return result
 
+    @staticmethod
+    def get_AllArticlesNamesAndDescriptions(tx):
+        result = tx.run("MATCH (N:Articulo) RETURN N.nombre , N.descripcion")
+        return result
+
 conection = HelloWorldExample("bolt://localhost:7687" , "neo4j" , "123")
-conection.print_articlesNames()
+conection.print_articlesNamesAndDescriptions()

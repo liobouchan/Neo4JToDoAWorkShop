@@ -69,6 +69,7 @@ class HelloWorldExample(object):
     def printea(tx):
         for record in tx.run("MATCH (N:Articulo) RETURN N.nombre , N.descripcion"):
             print(record["N.nombre"] , record["N.descripcion"])
+            # https://github.com/neo4j/neo4j-python-driver
 
 conection = HelloWorldExample("bolt://localhost:7687" , "neo4j" , "123")
 #conection.print_articlesNamesAndDescriptions()

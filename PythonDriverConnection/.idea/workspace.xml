@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e9f99e7c-1f38-4ca9-9d94-9312060f2df9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SigmaJSTests/sigma.js" beforeDir="false" afterPath="$PROJECT_DIR$/../SigmaJSTests/sigma.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="68" column="20" lean-forward="true" selection-start-line="67" selection-end-line="71" selection-end-column="58" />
+            <state relative-caret-position="252">
+              <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -25,7 +26,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/queries.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-93" />
+            <state relative-caret-position="450">
+              <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -60,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-1088" />
     <option name="width" value="1936" />
@@ -78,11 +81,6 @@
             <path>
               <item name="PythonDriverConnection" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonDriverConnection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PythonDriverConnection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonDriverConnection" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -184,15 +182,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-1088" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09536354" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44420367" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24052005" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -216,13 +213,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/queries.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93" />
+        <state relative-caret-position="450">
+          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="68" column="20" lean-forward="true" selection-start-line="67" selection-end-line="71" selection-end-column="58" />
+        <state relative-caret-position="252">
+          <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="43" selection-end-column="50" />
         </state>
       </provider>
     </entry>
